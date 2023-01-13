@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
 import Typed from "react-typed";
-import Fetch from "./Fetch";
+import Fetch from "./fetch/Fetch";
 import Error from "./Error";
 
 const configuration = new Configuration({
@@ -45,7 +45,7 @@ const SectionAi = () => {
   return (
     <section className="font-medium">
       <div className="max-w-[900px] w-full h-[650px] md:h-[900px] lg:h-screen mx-auto text-center flex flex-col py-5 items-center rounded-xl">
-        <h1 className="text-xl md:text-2xl tracking-widest uppercase">
+        <h1 className="text-xl md:text-2xl tracking-widest uppercase text-violet-800">
           <Typed
             strings={[`Generate Image By OpenAI`]}
             typeSpeed={100}
