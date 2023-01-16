@@ -5,7 +5,7 @@ import Fetch from "./fetch/Fetch";
 import Error from "./Error";
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "<<YOUR API KEY>>",
 });
 
 const openai = new OpenAIApi(configuration);
